@@ -13,12 +13,19 @@
     <label for="name">Name</label>
     <input type="text" id="name">
     <p id="para2"></p>
-    <label for="mcq">Color</label>
+    <label for="mcq">Select a Color:</label>
     <select name="mcq" id="mcq">
-        <option value="red">Red</option>
-        <option value="pink">Pink</option>
-        <option value="yellow">yellow</option>
+        <option disabled selected>Select</option>
+        <option value="Red">Red</option>
+        <option value="Pink">Pink</option>
+        <option value="Yellow">Yellow</option>
     </select>
+    <p id="para3"></p>
+    <label for="final">Type Something</label>
+    <input type="text" id="final">
+    <p id="para4"></p>
+
+
     <script>
         // document.getElementById("button").onclick = function(){
         //     document.getElementById("para").innerHTML = "<b>ABESEC</b>";
@@ -31,7 +38,13 @@
             document.getElementById("para2").innerHTML = "Input Focused";
         })
         document.getElementById("name").addEventListener("blur",()=>{
-            document.getElementById("para2").innerHTML = "Input Lost Focused";
+            document.getElementById("para2").innerHTML = "Input Lost Focused !!";
+        })
+        document.getElementById("mcq").addEventListener("input",(e)=>{
+            document.getElementById("para3").innerText = `You selected :  ${e.target.value}`;
+        })
+        document.getElementById("final").addEventListener("input",(e)=>{
+            document.getElementById("para4").innerText = `You Typed :  ${e.target.value}`;
         })
 
 
