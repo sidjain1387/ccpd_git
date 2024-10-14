@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button id="button">Click Here</button>
+    <p id="para">-----------Insert Here-----------</p> -->
+    <button id="btn">Click Me!</button>
+    <p id="para1"></p>
+    <label for="name">Name</label>
+    <input type="text" id="name">
+    <p id="para2"></p>
+    <label for="mcq">Color</label>
+    <select name="mcq" id="mcq">
+        <option value="red">Red</option>
+        <option value="pink">Pink</option>
+        <option value="yellow">yellow</option>
+    </select>
+    <script>
+        // document.getElementById("button").onclick = function(){
+        //     document.getElementById("para").innerHTML = "<b>ABESEC</b>";
+        // }
+        document.getElementById("btn").addEventListener("click",function(){
+            document.getElementById("para1").innerHTML = "Button Clicked";
+        });
+
+        document.getElementById("name").addEventListener("focus",()=>{
+            document.getElementById("para2").innerHTML = "Input Focused";
+        })
+        document.getElementById("name").addEventListener("blur",()=>{
+            document.getElementById("para2").innerHTML = "Input Lost Focused";
+        })
+
+
+    </script>
+    
+</body>
+</html>
