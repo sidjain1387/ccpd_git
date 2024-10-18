@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+<body>
+    <script>
+        let form = document.createElement("form");
+        form.id = "parent";
+        let div1 = document.createElement("div");
+        div1.id = "child1";
+        let div2 = document.createElement("div");
+        div2.id = "child2";
+        let div3 = document.createElement("div");
+        div3.id = "child3";
+        let div4 = document.createElement("div");
+        div4.id = "child4";
+        let div5 = document.createElement("div");
+        div5.id = "child5";
+        let div6 = document.createElement("div");
+        div6.id = "child6";
+        let div7 = document.createElement("div");
+        div7.id = "child7";
+        let div8 = document.createElement("div");
+        div8.id = "child8";
+
+
+
+        let h1 = document.createElement("h1");
+        h1.innerHTML = "<b>Enter Your Details Here</b>";
+
+        let label1 = document.createElement("label");
+        label1.innerText = "First Name : ";
+        label1.htmlFor = "Name";
+
+        let input1 = document.createElement("input");
+        input1.type = "text";
+        input1.id = "Name";
+        input1.value = "ABES";  // Pre-fill with "ABES"
+
+        let label2 = document.createElement("label");
+        label2.innerText = "Age : ";
+        label2.htmlFor = "age";
+
+        let input2 = document.createElement("input");
+        input2.type = "number";
+        input2.id = "age";
+        input2.placeholder = "Type Number only";
+
+        let label3 = document.createElement("label");
+        label3.innerText="Date of Birth : ";
+        label3.htmlFor="dob";
+
+        let input3 = document.createElement("input");
+        input3.type="date";
+        input3.id="dob";
+
+        let label4 = document.createElement("label");
+        label4.innerText="Email : ";
+        label4.htmlFor="email";
+
+        let input4 = document.createElement("input");
+        input4.type="email";
+        input4.id="email";
+
+        let label5 = document.createElement("label");
+        label5.innerText=" Password : ";
+        label5.htmlFor="password";
+
+        let input5 = document.createElement("input");
+        input5.type="password";
+        input5.id="password";
+
+        let p = document.createElement("p");
+        p.innerText=" Enter Your T-shirt Size: ";
+
+        let label6 = document.createElement("label");
+        label6.innerText="Small";
+        label6.htmlFor="small";
+        
+        let input6 = document.createElement("input");
+        input6.id="small";
+        input6.type="radio";
+        input6.value="small";
+
+        let label7 = document.createElement("label");
+        label7.innerText="Large";
+        label7.htmlFor="large";
+
+        let input7 = document.createElement("input");
+        input7.id="large";
+        input7.type="radio";
+        input7.value="large";
+
+        let label8=document.createElement("label");
+        label8.innerText="Your Favourite Colour : ";
+        label8.htmlFor="color";
+
+        let input8=document.createElement("input");
+        input8.type="color";
+        input8.id="color";
+
+        let label9=document.createElement("label");
+        label9.innerText="Tell us about Yourself : ";
+        label9.htmlFor="about";
+
+        let input9=document.createElement("textarea");
+        input9.id="about";
+        input9.cols="30";
+
+        let submit = document.createElement("button");
+        submit.innerText = "Submit";
+        submit.type = "submit";
+
+        let reset = document.createElement("button");
+        reset.innerText = "Reset";
+        reset.type = "reset";
+
+
+
+        
+        
+
+        
+
+
+
+
+        form.appendChild(h1);
+        form.appendChild(div1);
+        form.appendChild(div2);
+        form.appendChild(div3);
+        form.appendChild(div4);
+        form.appendChild(div5);
+        form.appendChild(div6);
+        form.appendChild(div7);
+        form.appendChild(div8);
+        
+        div1.appendChild(label1);
+        div1.appendChild(input1);
+        div2.appendChild(label2);
+        div2.appendChild(input2);
+        div3.appendChild(label3);
+        div3.appendChild(input3);
+        div4.appendChild(label4);
+        div4.appendChild(input4);
+        div4.appendChild(label5);
+        div4.appendChild(input5);
+        div5.appendChild(p);
+        div5.appendChild(input6);
+        div5.appendChild(label6);
+        div6.appendChild(input7);
+        div6.appendChild(label7);
+        div7.appendChild(label8);
+        div7.appendChild(input8);
+        div8.appendChild(label9);
+        div8.appendChild(input9);
+        div8.appendChild(reset);
+        div8.appendChild(submit);
+
+        document.body.appendChild(form);
+    </script>
+</body>
+</html>
