@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <div id="parent"></div>
+    <div id="parent2"></div>
+    <div id="parent3"></div>
+
+
+
+
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <script>
+        const parent2=document.getElementById("parent2");
+        const root = ReactDOM.createRoot(parent2);
+        const eh1=React.createElement("h1",{},"My Another List");
+        // root.render(eh1);
+        const item3 =React.createElement("li",{},"Item 3");
+        const item4=React.createElement("li",{},"Item 4");
+        const ul2=React.createElement("ul",{},item3,item4);
+        root.render([eh1,ul2]);
+
+
+    </script>
+
+
+
+
+  </body>
+</html>
