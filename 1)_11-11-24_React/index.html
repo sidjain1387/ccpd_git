@@ -23,18 +23,25 @@
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
     ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    <script>
+
+
+    <script type="text/babel">
         const parent2=document.getElementById("parent2");
         const root = ReactDOM.createRoot(parent2);
-        const eh1=React.createElement("h1",{},"My Another List");
+        const h1=<h1>React CDN</h1>
+        root.render(h1);
+        // const eh1=React.createElement("h1",{},"My Another List");
         // root.render(eh1);
-        const item3 =React.createElement("li",{},"Item 3");
-        const item4=React.createElement("li",{},"Item 4");
-        const ul2=React.createElement("ul",{},item3,item4);
-        root.render([eh1,ul2]);
-
-
+        // const item3 =React.createElement("li",{},"Item 3");
+        // const item4=React.createElement("li",{},"Item 4");
+        // const ul2=React.createElement("ul",{},item3,item4);
+        // root.render([eh1,ul2]);
+        const item1=<li>item 1</li>
+        const item2=<li>item 2</li>
+        const ul=<ul>{item1}{item2}</ul>
+        root.render([h1,ul]);
     </script>
 
 
