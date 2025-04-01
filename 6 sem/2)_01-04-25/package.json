@@ -1,0 +1,14 @@
+{
+  "name": "2)_01-04-25",
+  "version": "1.0.0",
+  "main": "add.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node newadd.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
